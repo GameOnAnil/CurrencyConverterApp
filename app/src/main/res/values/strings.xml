@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CurrencyConverterApp</string>
+
+    <string-array name="currency_codes">
+        <item>NPR</item>
+        <item>USD</item>
+        <item>AUD</item>
+        <item>AED</item>
+        <item>AFN</item>
+        <item>ALL</item>
+        <item>AMD</item>
+        <item>ANG</item>
+    </string-array>
+</resources>

@@ -5,5 +5,5 @@ import com.gameonanil.currencyconverterapp.utils.Resource
 
 interface MainRepository {
 
-    suspend fun getRates(base: String): Resource<CurrencyResponse>
+    suspend fun getRates(base :String): Resource<CurrencyResponse>
 }

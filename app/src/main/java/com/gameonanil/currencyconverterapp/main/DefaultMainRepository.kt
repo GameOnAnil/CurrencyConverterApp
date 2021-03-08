@@ -3,7 +3,6 @@ package com.gameonanil.currencyconverterapp.main
 import com.gameonanil.currencyconverterapp.data.CurrencyApi
 import com.gameonanil.currencyconverterapp.data.models.CurrencyResponse
 import com.gameonanil.currencyconverterapp.utils.Resource
-import retrofit2.Call
 import javax.inject.Inject
 
 class DefaultMainRepository @Inject constructor(

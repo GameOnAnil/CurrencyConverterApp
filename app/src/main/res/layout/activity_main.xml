@@ -78,7 +78,7 @@
         android:id="@+id/spFromCurrency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:entries="@array/currency_codes"
+        android:entries="@array/currency_codes1"
         android:padding="15dp"
         tools:layout_editor_absoluteX="56dp"
         tools:layout_editor_absoluteY="399dp"
@@ -91,7 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="25dp"
-        android:entries="@array/currency_codes"
+        android:entries="@array/currency_codes2"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTo" />

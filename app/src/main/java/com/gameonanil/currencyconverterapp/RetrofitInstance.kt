@@ -8,7 +8,7 @@ object RetrofitInstance {
 
     val api: CurrencyApi by lazy {
         Retrofit.Builder()
-                .baseUrl("https://v6.exchangerate-api.com/v6/b995ef67b53c9cbb008bbf97/")
+                .baseUrl("https://v6.exchangerate-api.com/v6/${BuildConfig.API_KEY}/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(CurrencyApi::class.java)

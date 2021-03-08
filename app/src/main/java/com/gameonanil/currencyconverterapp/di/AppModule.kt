@@ -23,8 +23,6 @@ import javax.inject.Singleton
 
 
 
-private const val BASE_URL = "https://v6.exchangerate-api.com/v6/b995ef67b53c9cbb008bbf97/"
-
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
@@ -32,7 +30,7 @@ object AppModule {
     @Singleton
     @Provides
     fun provideCurrencyApi(): CurrencyApi = Retrofit.Builder()
-        .baseUrl(BASE_URL)
+        .baseUrl("https://v6.exchangerate-api.com/v6/${com.gameonanil.currencyconverterapp.BuildConfig.API_KEY}/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
         .create(CurrencyApi::class.java)

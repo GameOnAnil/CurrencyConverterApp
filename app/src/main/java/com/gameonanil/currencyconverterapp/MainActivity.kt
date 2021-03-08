@@ -60,13 +60,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+
     }
 
 
     private fun testRetrofitInstance(){
         lifecycleScope.launchWhenStarted {
             val response = try {
-                RetrofitInstance.api.getRates("NPR")
+                RetrofitInstance.api.getRates("USD")
 
             }catch (e: HttpException){
                 Log.d(TAG, "testRetrofitInstance: HttpException")
